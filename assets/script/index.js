@@ -16,7 +16,6 @@ console.log(localStorage)
 button.addEventListener('click', (e) => {
     e.preventDefault();
     let url = './home.html'
-    //console.log('hello')
     if(passwords.value == '' || emails.value == ''){
         text.innerHTML = 'Input is required'
     }
@@ -26,14 +25,9 @@ button.addEventListener('click', (e) => {
  
     else if(passwords.value === localStorage.password && emails.value === localStorage.email){
     window.location.assign(url)
+   
     }
 })
 
-
-
-
-// localStorage.getItem('email')
-// localStorage.getItem('password')
-// console.log(localStorage)
 
 

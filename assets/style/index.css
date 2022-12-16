@@ -44,10 +44,18 @@ body{
 .picture{
     height: 650px;
     width: 40%;
+    position: relative;
     /* background-image: url(../img/pexels-aleksandar-pasaric-325185.jpg); */
     
 }
-
+.picture p{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    font-size: 36px;
+    color: #008b8b;
+    font-weight: 700;
+}
 img{
     height: 650px;
     width: 100%;
@@ -65,7 +73,13 @@ img{
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
     padding: 50px;
+    position: relative;
    
+}
+.right{
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
 }
 .name{
     position: relative;
@@ -86,15 +100,15 @@ form textarea{
 }
 
 .form-control input, form textarea{
-    border:2px solid lightblue;
+    border:2px solid #d6d6d6;
     border-radius: 4px;
     display: block;
     width:90%;
-    background-color: lightblue;
+    background-color: #d6d6d6;
     padding : 15px;
     font-size: 14px;
     margin-bottom: 20px;
-    color: #000;
+    color: #008b8b;
 }
 
 
@@ -129,7 +143,7 @@ form textarea{
 }
 
 h2{
-    color:var(--app-purple);
+    color:#008b8b;
     font-size: 38px;
  
 }
@@ -138,8 +152,8 @@ button {
     width: 120px;
     height: 40px;
     text-align: center;
-    background-color: green;
-    border: 2px solid green;
+    background-color: #008b8b;
+    border: 2px solid #008b8b;
     border-radius: 4px;
     color:#fff;
     font-size: 18px;
@@ -148,9 +162,29 @@ button {
     /* margin-left: 80px;
    margin-bottom: 20px; */
    margin-top: 40px;
+   cursor: pointer;
+   transition: transform .4s;
 }
 
+button:hover{
+    transform:scale(1.1);
+    font-size: 22px;
+    cursor:pointer;
+}
+
+.signup{
+    background-color: #d6d6d6;
+    border: 1px solid #008b8b;
+    color: #008b8b;
+    margin-left: 40px;
+}
 .last{
-    font-size: 14px;
+    font-size: 16px;
     color: black;
+}
+.text{
+    font-size: 16px;
+}
+.flex{
+    display: flex
 }

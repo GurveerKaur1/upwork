@@ -25,9 +25,11 @@ body{
 }
 
 .main-box{
-   height: 100vh;
+   /* height: 100vh; */
     display: flex;
-    margin-top: 80px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    /* margin-top: 70px;  */
     /* place-items: center;
     justify-content: center;
     text-align: center; */
@@ -46,7 +48,7 @@ body{
     height: 600px;
     width: 500px;
     margin: 20px;
-    box-shadow: 0 0 10px 2px grey;
+    box-shadow: 0 0 3px 2px #d6d6d6;
 }
 .pics{
     height: 300px;
@@ -72,7 +74,8 @@ body{
 }
 .name{
     font-size: 24px;
-    color:#000
+    color:#000;
+    font-weight: 600;
 }
 
 .grade{
@@ -110,6 +113,7 @@ a{
 .free{
     font-size: 18px;
     color: grey;
+    margin-top: 16px;
 }
 
 button {
@@ -121,15 +125,18 @@ button {
     border-radius: 36px;
     color:#008b8b;
     font-size: 18px;
-    
-    font-size: 18px;
     /* margin-left: 80px;
    margin-bottom: 20px; */
    margin-top: 30px;
 }
+
+button:hover{
+    background-color: #008b8b;
+    color:#fff;
+}
 .users{
     background-color: #fff;
-    box-shadow: 0 0 10px 2px grey;
+    box-shadow: 0 0 3px 2px #d6d6d6;
     height: 600px;
     width: 500px;
     margin: 20px;
@@ -149,7 +156,6 @@ button {
     height: 600px;
     width: 700px;
     margin: 20px;
-  
 }
 
 .posts{
@@ -160,12 +166,12 @@ button {
     box-sizing: border-box;
     align-items: center;
     display: flex;
-    
 }
 .posts .pst{
     font-size: 24px;
-    line-height: 43px;
+    line-height: 44px;
     width: 80%;
+    margin-top: 4px;
 }
 
 .posts .arrow{
@@ -187,7 +193,7 @@ button {
     width: 180px;
     background-color: #000;
     margin: 10px;
-    box-shadow:0 0 5px -1px grey ;
+    box-shadow:0 0 5px -1px #d6d6d6 ;
 }
 .data2 p{
     margin-left: 10px;
@@ -209,21 +215,26 @@ button {
 
 .data3 p{
     font-size: 24px;
-    line-height: 43px;
+    line-height: 44px;
     width: 80%;
+    margin-top: 3px;
 }
 .about{
-    height: 175px;
+    height: 170px;
     background-color: #fff;
     margin-top: 5px;
     align-items: center;
     padding: 10px;
     box-sizing: border-box;
+    box-shadow: 0px 20px 48px 0px rgb(0 0 0 / 0.05);
+
+ 
 }
 
 .about p{
     font-size: 16px;
-    color: #696969
+    color: #696969;
+  
 }
 .about p+p{
     margin-top: 8px;
@@ -233,12 +244,9 @@ button {
 --------Header---------          
 ----------------------*/
 
-h1 span {
-    color: #f9004d;
+h1{
+    color:#008b8b;
 }
-
-
-
 .flexbox {
     display: flex;
 }
@@ -255,15 +263,19 @@ h1 span {
     display: flex;
     border-bottom: 2px solid lightgrey;
     height: 45px;
-    width: 20%;
-   /* margin-left: 40px; */
+    width: 10%;
+    text-align: center;
+   margin-left: 30px; 
+}
+.search p{
+    margin-left: 10px;
 }
 .title h1 {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 600;
     line-height: 56px;
     font-family: "Roboto", sans-serif;
-    color: #191919;
+    color: #008b8b;
     letter-spacing: 0.2px;
     margin-right: 20px;
   
@@ -272,7 +284,7 @@ h1 span {
     font-size: 18px;
     line-height: 56px;
     margin-right: 10px;
-   
+   color: grey;
 
 }
 .tag {
@@ -285,8 +297,8 @@ h1 span {
 }
 
 nav {
-    width: 80%;
-    text-align: right;
+    width: 83%;
+    text-align: center;
 }
 
 nav ul {
@@ -301,6 +313,7 @@ nav ul li {
 
 header {
     background-color: #fff;
+    
 }
 
 nav ul li a {
@@ -316,7 +329,7 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
-
+     color: #008b8b
 }
 
 nav ul li+li {
@@ -355,13 +368,15 @@ nav ul li+li {
    margin-top: 10px;
 } 
 .icon{
-    width: 5%;
+    width: 2%;
     text-align: center;
 }
 .image{
     display: flex;
 }
-
+nav ul li .home{
+    color: #008b8b
+}
 /*---------------------
 -------footer----------
 ---------------------*/
@@ -395,38 +410,14 @@ footer .container{
     font-size: 0;
 }
 
-.cake, .cake2{
-    display:flex;
-}
 
-
-.cake p, .cake2 p, .cake .head, .cookies .cake2 p{
-    margin-top: 10px;
-    margin-left: 0px;
-    margin-bottom: 10px;
-    font-size: 16px;
-    color: #000;
-    text-align: left;
-}
-.cake p, .cookies p {
-    font-size: 20px;
-    color:saddlebrown;
-}
-.cake .price{
-    margin-left: 160px;
-}
-.head{
-    margin: 0;
-}
  .tags ul li {
     display: inline;
     line-height: 80px;
     cursor: default;
 }
 
-.rows+.rows{
-    margin-top: 20px;
-}
+
 section h2{
     font-size: 40px;
     font-family: "PT Serif", serif;
@@ -434,7 +425,7 @@ section h2{
 .tags ul li a, .tags ul .foot{
     background-color: #d6d6d6;
     font-size: 17px;
-    color:  var(--app-white);
+    color: #008b8b;
     text-decoration: none;
     font-weight: 600px;
     letter-spacing: 0.2px;
