@@ -1,0 +1,156 @@
+@import "./reset.css";
+
+:root {
+    --app-dark-bg: #1a1d28;
+    --app-red: #ff3c57;
+    --app-green: #33ab4e;
+    --app-purple: #833cff;
+    --app-orange: #ff833c;
+    --app-blue: #3c57ff;
+    --app-blue-hover: #364ee6;
+    --app-white: #fff;
+    --app-branding: #ff3c57;
+}
+
+
+
+
+.container {
+    width: min(100% - 30px, 1280px);
+    margin-inline: auto;
+}
+body{
+    background-image:url(../img/pexels-sebastian-palomino-1955134.jpg)
+}
+
+.main-box{
+   height: 100vh;
+    display: grid;
+    justify-content: center;
+    place-items: center;
+
+
+}
+
+.child{
+    display: flex;
+    background-color: none;
+    height: 650px;
+    width: 1000px;
+    border-radius: 12px;
+   
+}
+
+.picture{
+    height: 650px;
+    width: 40%;
+    /* background-image: url(../img/pexels-aleksandar-pasaric-325185.jpg); */
+    
+}
+
+img{
+    height: 650px;
+    width: 100%;
+    background-repeat: no-repeat;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+.box{
+    display: grid;
+    place-items: left;
+    align-items: center;
+    height: 650px;
+    width: 600px;
+    background-color: var(--app-white);
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 50px;
+   
+}
+.name{
+    position: relative;
+}
+
+
+
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    
+}
+
+ 
+form textarea{
+    resize:none;
+    height:150px;
+}
+
+.form-control input, form textarea{
+    border:2px solid lightblue;
+    border-radius: 4px;
+    display: block;
+    width:90%;
+    background-color: lightblue;
+    padding : 15px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+
+.flex{
+    flex-flow:row wrap;
+     display:flex;
+     gap:60px;
+}
+
+.hours p{
+  font-size: 24px;
+  color: #d6d6d6;
+  text-align: center;
+  font-weight: 600;
+}
+
+
+ .btn{
+    background-color: #ff3c57;
+    border: 4px solid #ff3c57;
+    border-radius: 6px;
+    color:#fff;
+    display:block;
+    padding: 15px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.last{
+    font-size: 18px;
+    color: #d6d6d6;
+}
+
+h2{
+    color:var(--app-purple);
+    font-size: 38px;
+ 
+}
+
+button {
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    background-color: green;
+    border: 2px solid green;
+    border-radius: 4px;
+    color:#fff;
+    font-size: 18px;
+    color:#fff;
+    font-size: 18px;
+    /* margin-left: 80px;
+   margin-bottom: 20px; */
+   margin-top: 40px;
+}
+
+.last{
+    font-size: 14px;
+    color: black;
+}
