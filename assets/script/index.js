@@ -25,7 +25,7 @@ button.addEventListener('click', (e) => {
  
     else if(passwords.value === localStorage.password && emails.value === localStorage.email){
     window.location.assign(url)
-   
+    emails.value = '';
     }
 })
 
